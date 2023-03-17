@@ -1,5 +1,5 @@
 import Effect from '@/components/effect'
-import LightModeBTN from '@/components/LightModeBTN'
+import Header from '@/components/Header'
 import Theme from '@/components/Theme'
 import WrapperRedux from '@/components/WrapperRedux'
 import Script from 'next/script'
@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <WrapperRedux>
-          <LightModeBTN />
           <Effect />
           <Theme>
+            <Header />
             {children}
           </Theme>
           <Script src='/script.js' />

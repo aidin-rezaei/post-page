@@ -1,0 +1,26 @@
+.EffectLightMode >div {
+    position: absolute;
+    top: 0;
+    width: 37px;
+    height: 37px;
+    border-radius: 50px;
+    animation: effectDark 1.5s forwards ease-out;
+}
+.EffectLightMode{
+    background: #fff;
+}
+.EffectLightMode .dark {
+    background: #000;
+}
+
+.EffectLightMode .light {
+    background: #fff;
+}
+
+
+@keyframes effectDark {
+    to {
+        transform: scale(90);
+
+    }
+}
