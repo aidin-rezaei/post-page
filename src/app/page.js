@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,6 +14,15 @@ export default function Home() {
           <code className={styles.code}>src/app/page.js</code>
         </p>
         <div>
+          <Link
+            href={{
+              pathname: '/post/1',
+              query: { name: 'test' },
+            }}
+          >
+            About
+          </Link>
+          replace
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
