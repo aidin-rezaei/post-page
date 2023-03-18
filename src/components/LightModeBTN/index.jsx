@@ -2,7 +2,6 @@
 import { Darkmode } from '@/features/Redux/counter/counterSlice';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './style.css'
 
 const LightModeBTN = () => {
     const dispatch = useDispatch()

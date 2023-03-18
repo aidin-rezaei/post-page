@@ -2,7 +2,6 @@ import Effect from '@/components/effect'
 import Header from '@/components/Header'
 import Theme from '@/components/Theme'
 import WrapperRedux from '@/components/WrapperRedux'
-import Script from 'next/script'
 import './globals.css'
 
 export const metadata = {
@@ -21,7 +20,6 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
           </Theme>
-          <Script src='/script.js' />
         </WrapperRedux>
       </body>
     </html>

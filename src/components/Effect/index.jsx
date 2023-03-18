@@ -1,8 +1,6 @@
 'use client'
-import { Darkmode } from "@/features/Redux/counter/counterSlice";
-import { useContext, useEffect, useRef, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import './style.css'
+import { useEffect, useRef } from "react";
+import { useSelector } from "react-redux";
 
 const Effect = () => {
     const select = useRef(null);

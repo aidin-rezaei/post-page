@@ -27,7 +27,47 @@ a {
   color: inherit;
   text-decoration: none;
 }
+.EffectLightMode >div {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border-radius: 50px;
+  animation: effectDark 1.3s forwards ease-in-out;
+}
+.EffectLightMode{
+  background: #E6E9EE;
+}
+.EffectLightMode .dark {
+  background: #333;
+}
 
+.EffectLightMode .light {
+  background: #E6E9EE;
+}
+.header .EffectLightMode {
+  background: #fff !important;
+}
+.header .EffectLightMode .light {
+  background: #fff !important;
+}
+.header .EffectLightMode .dark {
+  background: #000;
+}
+.main .EffectLightMode {
+  background: #fff !important;
+}
+.main .EffectLightMode .light {
+  background: #fff !important;
+}
+.main .EffectLightMode .dark {
+  background: #000;
+}
+@keyframes effectDark {
+  to {
+      transform: scale(150);
+
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

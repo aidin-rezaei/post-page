@@ -32,7 +32,7 @@ const Card = ({ item }) => {
                         WordPress Themes
                     </p>
                 </Link>
-                <p className="font-bold pl-1 text-lg">&#62;</p>
+                <p className="font-bold pl-1 text-lg">{'>'}</p>
             </div>
         </div>
     );

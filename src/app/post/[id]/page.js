@@ -12,7 +12,7 @@ export const revalidate = 10;
 
 const Page = async ({ params }) => {
   // const card = await getCard(params.id);
-console.log(params);
+// console.log(params);
   return (
     <div>
       ff
