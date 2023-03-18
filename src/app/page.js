@@ -17,13 +17,17 @@ export default async function Home() {
   async function pagination() {
     let count1= 3
     const element = [];
-    for (let index = conut;conut + 2 <= index >= lastpage; index++) {
-      console.log(index);
+    for (let index = conut; index <= lastpage; index++) {
+      if (conut + 2 >= index) {
+        console.log(index);
+        
+      }
     }
     return element;
   }
   const datepagination = await pagination();
   console.log(datepagination);
+
   return (
     <Content>
       {date.map((item) => {
