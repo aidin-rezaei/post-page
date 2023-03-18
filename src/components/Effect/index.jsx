@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
+import './style.css'
 
 const Effect = () => {
     const select = useRef(null);
@@ -31,7 +32,7 @@ const Effect = () => {
     }, [lightModeBTN]);
 
     return (
-        <div className={`EffectLightMode overflow-hidden w-[100%] h-[100%] absolute -z-10`} key={1} ref={select}>
+        <div className={`EffectLightMode overflow-hidden w-[100%] h-[100%] absolute -z-10 ${lightModeBTN[0]?'dark':'light'}`} key={1} ref={select}>
         </div>
     );
 }

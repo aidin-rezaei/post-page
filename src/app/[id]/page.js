@@ -51,12 +51,11 @@ export default async function Nextpost({ params }) {
                 )
             })}
             <div className='pagination w-[100%] flex justify-center'>
-                <Link href={`/1`} className="hover:text-red-500 mx-1 my-5 text-white">
+                <Link href={`/`} className="hover:text-red-500 mx-1 my-5 text-white">
                     <p className='bg-blue-400 px-2 py-1'>1</p>
                 </Link>
                 <p className='px-2 py-1 my-5'>...</p>
                 {getpaginationPrevious.map((item) => {
-                    console.log(item);
                     return (
                         <Link href={`/${item}`} key={item} className="hover:text-red-500 mx-1 my-5 text-white">
                             <p className='bg-blue-400 px-2 py-1'>{item}</p>
@@ -64,9 +63,7 @@ export default async function Nextpost({ params }) {
                     )
                 })}
                 <p className='px-2 py-1 my-5'>{conut}</p>
-
                 {getpaginationNext.map((item) => {
-                    console.log(item);
                     return (
                         <Link href={`/${item}`} key={item} className="hover:text-red-500 mx-1 my-5 text-white">
                             <p className='bg-blue-400 px-2 py-1'>{item}</p>
