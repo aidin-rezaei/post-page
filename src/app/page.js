@@ -15,18 +15,16 @@ export default async function Home() {
   let conut = 1;
   let lastpage = date[date.length - 1].userId
   async function pagination() {
-    let count1= 3
+    let count1 = 3
     const element = [];
-    for (let index = conut; index <= lastpage; index++) {
+    for (let index = conut + 1; index <= lastpage; index++) {
       if (conut + 2 >= index) {
-        console.log(index);
-        
+        element.push(index)
       }
     }
     return element;
   }
   const datepagination = await pagination();
-  console.log(datepagination);
 
   return (
     <Content>
@@ -36,7 +34,7 @@ export default async function Home() {
             {
               conut === item.userId ?
                 <div key={item.id} >
-                  <Card item={item} key={item.id}/>
+                  <Card item={item} key={item.id} />
                 </div>
                 :
                 ""
@@ -46,10 +44,18 @@ export default async function Home() {
       })}
       <div className='pagination w-[100%] flex justify-center'>
         {/* {lastpage} */}
-        <p className='px-2 py-1'>{conut}</p>
-        {}
-        <Link href="/1" className="hover:text-red-500 text-white">
-          <p className='bg-blue-400 px-2 py-1'>2</p>
+        <p className='px-2 py-1 my-5'>{conut}</p>
+        {datepagination.map((item) => {
+          console.log(item);
+          return (
+            <Link href={`/${item}`} key={item} className="hover:text-red-500 mx-1 my-5 text-white">
+              <p className='bg-blue-400 px-2 py-1'>{item}</p>
+            </Link>
+          )
+        })}
+        <p className='px-2 py-1 my-5'>...</p>
+        <Link href={`/${lastpage}`} className="hover:text-red-500 mx-1 my-5 text-white">
+          <p className='bg-blue-400 px-2 py-1'>{lastpage}</p>
         </Link>
       </div>
     </Content >
