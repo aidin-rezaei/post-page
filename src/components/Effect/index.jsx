@@ -10,13 +10,13 @@ const Effect = () => {
     useEffect(function onFirstMount() {
         // document.getElementsByClassName("lightModeBTN")[0].addEventListener('click', (e) => {
         let bodyRect = document.body.getBoundingClientRect(),
-            top = lightModeBTN[1] - bodyRect.top - window.scrollY,
-            left = lightModeBTN[2] - bodyRect.left - window.scrollX,
+            top = lightModeBTN[1] - bodyRect.top,
+            left = lightModeBTN[2] - bodyRect.left,
             circle = document.createElement('div'),
-            top2 = (circle.offsetTop + select.current.parentElement.offsetTop),
-            left2 = (circle.offsetLeft + select.current.parentElement.offsetLeft)
-        circle.style.top = `-${top2}px`;
-        circle.style.left = `-${left2}px`;
+            top2 = (lightModeBTN[1] + window.scrollY - top),
+            left2 = (lightModeBTN[2] + window.scrollX - left)
+        circle.style.top = `${top2}px`;
+        circle.style.left = `${left2}px`;
         circle.style.marginTop = `${top}px`;
         circle.style.marginLeft = `${left}px`;
         if (lightModeBTN[0] === true)
@@ -35,7 +35,7 @@ const Effect = () => {
     }, [lightModeBTN]);
 
     return (
-        <div className={`EffectLightMode w-[100vw] h-[100vh] overflow-hidden fixed -z-10`} ref={select}>
+        <div className={`EffectLightMode overflow-hidden w-[100%] h-[100%] absolute -z-10`} ref={select}>
         </div>
     );
 }

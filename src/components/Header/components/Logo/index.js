@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Logo = () => {
     return (
-        <div className="ml-12 dark:invert dark:brightness-0">
+        <div className="ml-12 w-[200px] dark:invert dark:brightness-0">
             <Image
                 src="/logo.png"
                 width={150}
