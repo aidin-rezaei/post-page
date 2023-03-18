@@ -10,15 +10,17 @@ const Effect = () => {
     useEffect(function onFirstMount() {
         // document.getElementsByClassName("lightModeBTN")[0].addEventListener('click', (e) => {
         let bodyRect = document.body.getBoundingClientRect(),
-            top = lightModeBTN[1] - bodyRect.top,
-            left = lightModeBTN[2] - bodyRect.left,
+            base = select.current.getBoundingClientRect(),
+            top =  bodyRect.top - base.top,
+            left =  bodyRect.left - base.left,
             circle = document.createElement('div'),
-            top2 = (lightModeBTN[1] + window.scrollY - top),
-            left2 = (lightModeBTN[2] + window.scrollX - left)
-        circle.style.top = `${top2}px`;
-        circle.style.left = `${left2}px`;
-        circle.style.marginTop = `${top}px`;
-        circle.style.marginLeft = `${left}px`;
+            top2 = ( Number(lightModeBTN[1]) + window.scrollY ) + top,
+            left2 = (Number(lightModeBTN[2]) + window.scrollX ) + left
+        console.log(left2);
+        // circle.style.top = `${top}px`;
+        // circle.style.left = `${left}px`;
+        circle.style.marginTop = `${top2}px`;
+        circle.style.marginLeft = `${left2}px`;
         if (lightModeBTN[0] === true)
             circle.classList.add('dark')
         else if (lightModeBTN[0] === false)
