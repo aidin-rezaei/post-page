@@ -6,7 +6,7 @@ const Theme = ({ children }) => {
     const lightModeBTN = useSelector((state) => state.counter.value)
 
     return (
-        <div  data-mode={lightModeBTN[0]?'dark':'light'}>
+        <div className="h-[100%]"  data-mode={lightModeBTN[0]?'dark':'light'}>
             {children}
         </div>
     );

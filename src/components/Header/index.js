@@ -5,7 +5,7 @@ import Menu from "./components/Menu";
 
 const Header = () => {
     return (
-        <header className="header relative overflow-hidden z-10 flex justify-between items-center border-b border-[#E1E6EC]">
+        <header className="header relative overflow-hidden z-10 flex justify-between items-center shadow-lx ">
             <Effect />
             <Logo />
             <Menu />

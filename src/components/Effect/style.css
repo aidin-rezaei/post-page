@@ -24,6 +24,15 @@
 .header .EffectLightMode .dark {
     background: #000;
 }
+.main .EffectLightMode {
+    background: #fff !important;
+}
+.main .EffectLightMode .light {
+    background: #fff !important;
+}
+.main .EffectLightMode .dark {
+    background: #000;
+}
 @keyframes effectDark {
     to {
         transform: scale(150);
