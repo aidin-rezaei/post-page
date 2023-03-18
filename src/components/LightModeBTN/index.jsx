@@ -14,7 +14,6 @@ const LightModeBTN = () => {
     useEffect(() => {
 
     }, [])
-    console.log(lightModeBTN);
     return (
         <div onClick={click} id='lightModeBTN' className='lightModeBTN w-10 mr-10 h-[100%] dark:text-white '>
             {lightModeBTN[0] ?

@@ -9,7 +9,6 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     Darkmode: (state,action) => {
-      // console.log(state);
       state.value = action.payload
     },
 
