@@ -1,72 +1,11 @@
+import Card from '@/components/Card'
 import Content from '@/components/Content'
 import styles from './page.module.css'
 
 export default function Home() {
   return (
     <Content>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
-      <h1>HELLO</h1>
+      <Card/>
     </Content>
   )
 }
