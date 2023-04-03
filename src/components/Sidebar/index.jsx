@@ -8,7 +8,7 @@ const Sidebar = () => {
                 <p className="text-gray-400 py-[30px]">
                     Get awesome content delivered straight to your inbox.
                 </p>
-                <input className="py-[5px] bg-gray-400" type="text" name="mail" id="mail" />
+                <input className="p-[8px] bg-gray-600 w-[100%]" placeholder="Enter your email address" type="text" name="mail" id="mail" />
             </div>
         </div>
     );
