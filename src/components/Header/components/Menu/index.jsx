@@ -1,8 +1,13 @@
 const Menu = () => {
     return (
         <menu className="w-[100%] flex">
-            <ul className="md:flex hidden justify-start items-center gap-1 dark:text-white">
-                <li className="p-5 h-20 flex justify-between items-center cursor-pointer text-lg font-bold">Categories</li>
+            <ul className="md:flex hidden justify-start items-center gap-1 dark:text-white" role="list">
+                <li className="relative group p-5 h-20 flex justify-between items-center cursor-pointer text-lg font-bold z-10">
+                    Categories
+                    <div className="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all top-[100%] left-0 w-[500px] h-[500px] bg-white dark:bg-black  z-10">
+                        12
+                    </div>
+                </li>
                 <li className="p-5 h-20 flex justify-between items-center cursor-pointer text-lg font-bold">Guides</li>
                 <li className="p-5 h-20 flex justify-between items-center cursor-pointer text-lg font-bold">WordPress Hosting</li>
                 <li className="p-5 h-20 flex justify-between items-center cursor-pointer text-lg font-bold">Managed Hosting</li>
