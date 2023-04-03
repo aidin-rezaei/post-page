@@ -27,7 +27,7 @@ const Card = ({ item, dis }) => {
                 {item.body}
             </p>
             {dis ? '' :
-                <div className="flex px-5 pb-5 items-center border-b border-slate-700">
+                <div className="flex px-5 pb-5 items-center border-b border-gray-300 dark:border-gray-600">
                     <Link href={`/post/${item.id}`} className="hover:text-red-500 text-blue-400">
                         <p className="">
                             WordPress Themes

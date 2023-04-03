@@ -1,4 +1,5 @@
 import Effect from '@/components/effect'
+import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Theme from '@/components/Theme'
 import WrapperRedux from '@/components/WrapperRedux'
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           <Theme>
             <Header />
             {children}
+            <Footer/>
           </Theme>
         </WrapperRedux>
       </body>

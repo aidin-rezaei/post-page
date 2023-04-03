@@ -1,6 +1,6 @@
 const Sidebar = () => {
     return (
-        <div className="my-5 mr-5">
+        <div className="my-5 mr-5 hidden lg:block">
             <div className="w-[320px] p-[20px]" style={{ background: "#2c3644 url(/2.png) no-repeat 110% -20px" }}>
                 <h3 className="text-white font-bold before:content-[''] before:w-[35px] before:h-[1px] before:bg-[#f05a28] before:absolute relative before:-bottom-[10px]">
                     OUR NEWSLETTER
