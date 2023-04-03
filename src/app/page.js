@@ -53,14 +53,14 @@ export default async function Home() {
                     )
                 })}
                 <div className='pagination w-[100%] flex justify-center'>
-                    <Link href={`/`} className="hover:text-red-500 mx-1 my-5 text-white">
-                        <p className='bg-blue-400 px-2 py-1'>1</p>
+                    <Link href={`/`} className="hover:opacity-80 mx-1 my-5 text-white">
+                        <p className='bg-[#f05a28] px-2 py-1'>1</p>
                     </Link>
                     <p className='px-2 py-1 my-5'>...</p>
                     {getpaginationPrevious.map((item) => {
                         return (
-                            <Link href={`/${item}`} key={item} className="hover:text-red-500 mx-1 my-5 text-white">
-                                <p className='bg-blue-400 px-2 py-1'>{item}</p>
+                            <Link href={`/${item}`} key={item} className="hover:opacity-80 mx-1 my-5 text-white">
+                                <p className='bg-[#f05a28] px-2 py-1'>{item}</p>
                             </Link>
                         )
                     })}
@@ -68,14 +68,14 @@ export default async function Home() {
 
                     {getpaginationNext.map((item) => {
                         return (
-                            <Link href={`/${item}`} key={item} className="hover:text-red-500 mx-1 my-5 text-white">
-                                <p className='bg-blue-400 px-2 py-1'>{item}</p>
+                            <Link href={`/${item}`} key={item} className="hover:opacity-80 mx-1 my-5 text-white">
+                                <p className='bg-[#f05a28] px-2 py-1'>{item}</p>
                             </Link>
                         )
                     })}
                     <p className='px-2 py-1 my-5'>...</p>
-                    <Link href={`/${lastpage}`} className="hover:text-red-500 mx-1 my-5 text-white">
-                        <p className='bg-blue-400 px-2 py-1'>{lastpage}</p>
+                    <Link href={`/${lastpage}`} className="hover:opacity-80 mx-1 my-5 text-white">
+                        <p className='bg-[#f05a28] px-2 py-1'>{lastpage}</p>
                     </Link>
                 </div>
             </Content >

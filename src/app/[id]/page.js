@@ -1,5 +1,6 @@
 import Card from '@/components/Card'
 import Content from '@/components/Content'
+import Sidebar from '@/components/Sidebar';
 import Link from 'next/link';
 // import styles from './page.module.css'
 
@@ -35,46 +36,49 @@ export default async function Nextpost({ params }) {
         getpaginationPrevious = await paginationPrevious(conut)
 
     return (
-        <Content>
-            {date.map((item) => {
-                return (
-                    <>
-                        {
-                            conut === item.userId ?
-                                <div key={item.id} >
-                                    <Card item={item} key={item.id} />
-                                </div>
-                                :
-                                ""
-                        }
-                    </>
-                )
-            })}
-            <div className='pagination w-[100%] flex justify-center'>
-                <Link href={`/`} className="hover:text-red-500 mx-1 my-5 text-white">
-                    <p className='bg-blue-400 px-2 py-1'>1</p>
-                </Link>
-                <p className='px-2 py-1 my-5'>...</p>
-                {getpaginationPrevious.map((item) => {
+        <div className='flex justify-center items-start flex-wrap '>
+            <Content>
+                {date.map((item) => {
                     return (
-                        <Link href={`/${item}`} key={item} className="hover:text-red-500 mx-1 my-5 text-white">
-                            <p className='bg-blue-400 px-2 py-1'>{item}</p>
-                        </Link>
+                        <>
+                            {
+                                conut === item.userId ?
+                                    <div key={item.id} >
+                                        <Card item={item} key={item.id} />
+                                    </div>
+                                    :
+                                    ""
+                            }
+                        </>
                     )
                 })}
-                <p className='px-2 py-1 my-5'>{conut}</p>
-                {getpaginationNext.map((item) => {
-                    return (
-                        <Link href={`/${item}`} key={item} className="hover:text-red-500 mx-1 my-5 text-white">
-                            <p className='bg-blue-400 px-2 py-1'>{item}</p>
-                        </Link>
-                    )
-                })}
-                <p className='px-2 py-1 my-5'>...</p>
-                <Link href={`/${lastpage}`} className="hover:text-red-500 mx-1 my-5 text-white">
-                    <p className='bg-blue-400 px-2 py-1'>{lastpage}</p>
-                </Link>
-            </div>
-        </Content >
+                <div className='pagination w-[100%] flex justify-center'>
+                    <Link href={`/`} className="hover:opacity-80 mx-1 my-5 text-white">
+                        <p className='bg-[#f05a28] px-2 py-1'>1</p>
+                    </Link>
+                    <p className='px-2 py-1 my-5'>...</p>
+                    {getpaginationPrevious.map((item) => {
+                        return (
+                            <Link href={`/${item}`} key={item} className="hover:opacity-80 mx-1 my-5 text-white">
+                                <p className='bg-[#f05a28] px-2 py-1'>{item}</p>
+                            </Link>
+                        )
+                    })}
+                    <p className='px-2 py-1 my-5'>{conut}</p>
+                    {getpaginationNext.map((item) => {
+                        return (
+                            <Link href={`/${item}`} key={item} className="hover:opacity-80 mx-1 my-5 text-white">
+                                <p className='bg-[#f05a28] px-2 py-1'>{item}</p>
+                            </Link>
+                        )
+                    })}
+                    <p className='px-2 py-1 my-5'>...</p>
+                    <Link href={`/${lastpage}`} className="hover:opacity-80 mx-1 my-5 text-white">
+                        <p className='bg-[#f05a28] px-2 py-1'>{lastpage}</p>
+                    </Link>
+                </div>
+            </Content >
+            <Sidebar />
+        </div>
     )
 }
