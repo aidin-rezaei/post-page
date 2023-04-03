@@ -13,6 +13,7 @@ const Sidebar = () => {
                     GET UPDATES
                 </button>
             </div>
+            
         </div>
     );
 }
