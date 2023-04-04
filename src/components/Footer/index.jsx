@@ -110,7 +110,7 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-            <div className="text-gray-400 bg-[#262f3c] w-[100%] md:px-[150px] py-5 px-2 flex justify-between items-start gap-5 flex-wrap text-sm">
+            <div className="text-gray-400 bg-[#262f3c] w-[100%] md:px-[150px] py-5 px-2 flex md:justify-between justify-center items-start gap-5 flex-wrap text-sm">
                 <p>
                     © Copyright 2023 WPKube ® All Rights Reserved.
                 </p>
