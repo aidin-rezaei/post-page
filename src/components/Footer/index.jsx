@@ -16,7 +16,7 @@ const Footer = () => {
 
                 />
             </div>
-            <div className="w-[100%] bg-[#2c3644] md:px-[150px] py-12 px-2 flex justify-center items-start gap-5 flex-wrap">
+            <div className="w-[100%] bg-[#2c3644] hidden md:flex  md:px-[150px] py-12 px-2 justify-center items-start gap-5 flex-wrap">
                 <div className="max-w-[400px] text-sm">
                     <h3 className="text-white font-bold pb-6">ABOUT WPKUBE</h3>
                     <p className="text-gray-400">
@@ -63,7 +63,7 @@ const Footer = () => {
                     </p>
                     <p className="text-gray-400 hover:text-white py-1">
                         Thrive Leads
-                        
+
                     </p>
                     <p className="text-gray-400 hover:text-white py-1">
                         Flywheel
@@ -88,7 +88,7 @@ const Footer = () => {
                 <div className="max-w-[150px] text-sm">
                     <h3 className="text-white font-bold pb-6">DEALS</h3>
                     <p className="text-gray-400 hover:text-white py-1">
-                        InMotion Hosting 
+                        InMotion Hosting
                     </p>
                     <p className="text-gray-400 hover:text-white py-1">
                         LifterLMS Coupon
@@ -108,6 +108,17 @@ const Footer = () => {
                     <p className="text-gray-400 hover:text-white py-1 my-2 decoration-solid underline">
                         More Deals »
                     </p>
+                </div>
+            </div>
+            <div className="text-gray-400 bg-[#262f3c] w-[100%] md:px-[150px] py-5 px-2 flex justify-between items-start gap-5 flex-wrap text-sm">
+                <p>
+                    © Copyright 2023 WPKube ® All Rights Reserved.
+                </p>
+                <div className="flex items-center justify-center gap-5">
+                    <p className="hover:text-white">Contact</p>
+                    <p className="hover:text-white">Site Terms</p>
+                    <p className="hover:text-white">Disclosure</p>
+                    <p className="hover:text-white">Privacy Policy</p>
                 </div>
             </div>
         </footer>
